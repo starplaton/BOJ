@@ -9,8 +9,8 @@ const turndownService = new TurndownService();
 
 let headerGenerator = new HeaderGenerator({
     browsers: [
-        {name: "firefox", minVersion: 90},
-        {name: "chrome", minVersion: 110},
+        { name: "firefox", minVersion: 90 },
+        { name: "chrome", minVersion: 110 },
         "safari"
     ],
     devices: [
@@ -22,27 +22,40 @@ let headerGenerator = new HeaderGenerator({
 });
 
 async function submit(url, path) {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox'],
+        headless: true
+    });
     const page = await browser.newPage();
     const myHeaders = headerGenerator.getHeaders();
-    let cookies = {};
+    let cookies = [];
     const cookieFilePath = './cookie.txt';
     try {
         const cookieString = await fs.readFile(cookieFilePath, 'utf8');
         cookies = cookieString.split('; ').map(cookie => {
             const [name, value] = cookie.split('=');
             return {
-              name,
-              value,
-              domain: '.acmicpc.net' // 쿠키의 도메인을 설정해야 합니다.
+                name: name.trim(),
+                value: value.trim(),
+                domain: '.acmicpc.net' // 쿠키의 도메인을 설정해야 합니다.
             };
         });
     } catch (err) {
+        console.error('Error reading cookie file:', err);
     }
+
     console.log(cookies);
     console.log(myHeaders);
+
     await page.setExtraHTTPHeaders(myHeaders);
-    await page.setCookie(...cookies);
+
+    // 페이지에 쿠키를 설정합니다.
+    try {
+        await page.setCookie(...cookies);
+    } catch (err) {
+        console.error('Error setting cookies:', err);
+    }
+
     await page.goto(url);
 
     await page.screenshot({ path: `./test.png`, fullPage: true });
@@ -72,7 +85,7 @@ async function submit(url, path) {
     await browser.close();
 }
 
-(async() => {
+(async () => {
     const args = process.argv.slice(2);
     const problem_num = Number(args[0]);
     if (!problem_num) {

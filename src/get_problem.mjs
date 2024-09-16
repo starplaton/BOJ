@@ -9,8 +9,8 @@ const turndownService = new TurndownService();
 
 let headerGenerator = new HeaderGenerator({
     browsers: [
-        {name: "firefox", minVersion: 90},
-        {name: "chrome", minVersion: 110},
+        { name: "firefox", minVersion: 90 },
+        { name: "chrome", minVersion: 110 },
         "safari"
     ],
     devices: [
@@ -29,21 +29,21 @@ const fetchHtmlWithCustomHeaders = async (url) => {
         });
 
         if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
 
         const html = await response.text();
         const root = parse(html);
         const want_delete = [root.querySelectorAll('#problem-lang-base64'), root.querySelectorAll('script'), root.querySelectorAll('#problem-info thead'), root.querySelectorAll('ul.problem-menu'), root.querySelectorAll('span.problem-label'), root.querySelectorAll('button.copy-button')];
-        for(const cur of want_delete) {
-            for(const item of cur) {
+        for (const cur of want_delete) {
+            for (const item of cur) {
                 item.set_content('');
             }
         }
         const sample_inputs = [];
         const sample_outputs = [];
 
-        for(let idx = 1; idx <= 100; ++idx) {
+        for (let idx = 1; idx <= 100; ++idx) {
             const id_input = 'sample-input-' + idx;
             const id_output = 'sample-output-' + idx;
             const cur_input = root.querySelector('#' + id_input) && root.querySelector('#' + id_input).innerHTML;
@@ -55,10 +55,10 @@ const fetchHtmlWithCustomHeaders = async (url) => {
                 break;
             }
         }
-        
+
         const contentDivs = root.querySelectorAll('div .container.content');
         if (contentDivs.length == 0) return '';
-        const markdown = '# ' + turndownService.turndown(contentDivs[0].innerHTML);     
+        const markdown = '# ' + turndownService.turndown(contentDivs[0].innerHTML);
         return {
             html: root,
             markdown,
@@ -73,11 +73,11 @@ const fetchHtmlWithCustomHeaders = async (url) => {
 
 // 디렉토리 생성 및 파일 작성
 async function writeFile(filePath, content) {
-  try {
-    await fs.outputFile(filePath, String(content));
-  } catch (error) {
-    console.error('Error writing file:', error);
-  }
+    try {
+        await fs.outputFile(filePath, String(content));
+    } catch (error) {
+        console.error('Error writing file:', error);
+    }
 }
 
 async function saveAttachments(html, basePath) {
@@ -86,43 +86,43 @@ async function saveAttachments(html, basePath) {
     const urls = String(html).match(urlPattern);
 
     if (urls) {
-    urls.forEach(async (url, index) => {
-        try {
-        const response = await fetch(url, {
-            method: 'GET', // 요청의 종류를 설정합니다 (GET, POST 등)
-            headers: headerGenerator.getHeaders()
+        urls.forEach(async (url, index) => {
+            try {
+                const response = await fetch(url, {
+                    method: 'GET', // 요청의 종류를 설정합니다 (GET, POST 등)
+                    headers: headerGenerator.getHeaders()
+                });
+                if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+
+                // 파일 내용을 버퍼로 가져오기
+                const buffer = await response.arrayBuffer();
+
+                // 파일 유형 및 확장자 추정
+                const fileType = await fileTypeFromBuffer(buffer);
+                let extension = fileType ? fileType.ext : 'bin'; // 파일 유형을 알 수 없을 경우 기본값 'bin'
+
+                // 파일 이름 설정
+                const fileName = `${index}.${extension}`;
+                const filePath = `${basePath}/${fileName}`;
+
+                // 파일 내용 저장
+                await fs.outputFile(filePath, Buffer.from(buffer));
+            } catch (error) {
+                console.error(`Error fetching URL ${url}:`, error);
+            }
         });
-        if (!response.ok) throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
-
-        // 파일 내용을 버퍼로 가져오기
-        const buffer = await response.arrayBuffer();
-
-        // 파일 유형 및 확장자 추정
-        const fileType = await fileTypeFromBuffer(buffer);
-        let extension = fileType ? fileType.ext : 'bin'; // 파일 유형을 알 수 없을 경우 기본값 'bin'
-
-        // 파일 이름 설정
-        const fileName = `${index}.${extension}`;
-        const filePath = `${basePath}/${fileName}`;
-
-        // 파일 내용 저장
-        await fs.outputFile(filePath, Buffer.from(buffer));
-        } catch (error) {
-            console.error(`Error fetching URL ${url}:`, error);
-        }
-    });
     } else {
         // console.log('No URLs found in the HTML.');
     }
 }
 
 function createTemplate(langs, problem_num, base) {
-    for(const lang of langs) {
+    for (const lang of langs) {
         const content = String(fs.readFileSync(`./src/template.${lang}`));
         const changed = content.replaceAll('BOJ_PROBLEM_NUMBER', problem_num);
         fs.outputFileSync(`${base}/solution/main.${lang}`, changed);
     }
-    for(const lang of langs) {
+    for (const lang of langs) {
         const content = String(fs.readFileSync(`./src/${lang}_test.sh`));
         const changed = content.replaceAll('BOJ_PROBLEM_NUMBER', problem_num);
         fs.outputFileSync(`${base}/${lang}_test.sh`, changed);
@@ -131,7 +131,10 @@ function createTemplate(langs, problem_num, base) {
 }
 
 async function savePageImage(url, path) {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox'],
+        headless: true
+    });
     const page = await browser.newPage();
     const headers = headerGenerator.getHeaders();
     await page.setExtraHTTPHeaders(headers);
@@ -140,7 +143,7 @@ async function savePageImage(url, path) {
     await browser.close();
 }
 
-(async() => {
+(async () => {
     const args = process.argv.slice(2);
     const problem_num = Number(args[0]);
     if (!problem_num) {
@@ -151,7 +154,7 @@ async function savePageImage(url, path) {
     const ret = await fetchHtmlWithCustomHeaders('https://www.acmicpc.net/problem/' + problem_num);
     writeFile(`./boj/${problem_num}/desc.html`, ret.html);
     writeFile(`./boj/${problem_num}/desc.md`, ret.markdown);
-    for(let i = 1; i <= ret.sample_cnt; ++i) {
+    for (let i = 1; i <= ret.sample_cnt; ++i) {
         writeFile(`./boj/${problem_num}/input/${i}.txt`, ret.sample_inputs[i - 1]);
         writeFile(`./boj/${problem_num}/output/${i}.txt`, ret.sample_outputs[i - 1]);
     }
