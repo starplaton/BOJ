@@ -10,15 +10,16 @@ typedef long long ll;
 int t, n, m, k;
 int ar[202020];
 
-void solve_BOJ_PROBLEM_NUMBER() {
-    cin >> n;
-    for (int i = 0; i < n; i++) cin >> ar[i];
+void solve_28444() {
+    int a, b, c, d, e;
+    cin >> a >> b >> c >> d >> e;
+    cout << a * b - (c * d * e);
 }
 
 int main() {
     cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(false);
     int TC = 1;
     // scanf("%d", &TC);
-    while (TC--) solve_BOJ_PROBLEM_NUMBER();
+    while (TC--) solve_28444();
     return 0;
 }

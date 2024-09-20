@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ko"><head><title>언어 정보</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="author" content="스타트링크 (Startlink)"><meta property="og:type" content="website"><meta property="og:image" content="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/images/help-og.png"><meta property="og:site_name" content="BOJ Help"><meta name = "format-detection" content = "telephone=no"><meta name="msapplication-config" content="none"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f47681"><meta name="msapplication-TileColor" content="#f47681"><meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik"><link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Source+Code+Pro&amp;subset=korean" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato:900i" rel="stylesheet"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/bootstrap/bootstrap.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/icon-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/icon-line/css/simple-line-icons.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/icon-etlinefont/style.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/icon-line-pro/style.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/icon-hs/style.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/hs-admin-icons/hs-admin-icons.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/animate.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/flatpickr/dist/css/flatpickr.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/bootstrap-select/css/bootstrap-select.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/fancybox/jquery.fancybox.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/hamburgers/hamburgers.min.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/multiselect/css/multi-select.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/noty/lib/noty.css"><link rel="stylesheet" href="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/css/unify-admin.css"><link rel="stylesheet" href="https://ddo7jzca0m2vt.cloudfront.net/css/result.css?version=20240109"><link rel="stylesheet" href="https://ddo7jzca0m2vt.cloudfront.net/css/label.css?version=20240109"><link rel="stylesheet" href="https://d21wyr8qlyi2y5.cloudfront.net/css/custom.css?version=20240109"><link rel="stylesheet" href="/assets/css/custom.css?version=20240109">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHVLGG8PSY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DHVLGG8PSY');
+</script>
+<meta name="username" content="">
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.min.css"><link type="text/css" rel="stylesheet" href="https://ddo7jzca0m2vt.cloudfront.net/css/codemirror-style.css">
+</head><body><header id="js-header" class="u-header u-header--sticky-top"><div class="u-header__section u-header__section--admin-dark g-min-height-65"><nav class="navbar no-gutters g-pa-0"><div class="col-auto d-flex flex-nowrap u-header-logo-toggler g-py-12"><a href="/" class="navbar-brand d-flex align-self-center g-hidden-xs-down g-line-height-1 py-0 g-mt-5 boj-help-logo"><img src = "/assets/logo/boj-help-white.png"></a><a class="js-side-nav u-header__nav-toggler d-flex align-self-center ml-auto" href="javascript:void(0);" data-hssm-class="u-side-nav--mini u-sidebar-navigation-v1--mini" data-hssm-body-class="u-side-nav-mini" data-hssm-is-close-all-except-this="true" data-hssm-target="#sideNav"><i class="hs-admin-align-left"></i></a></div><div class="col-auto d-flex g-py-12 g-pl-40--lg ml-auto"><div class="col-auto d-flex g-pt-5 g-pt-0--sm g-pl-10 g-pl-20--sm"><div class="g-pos-rel g-px-10--lg"><a id="profileMenuInvoker" class="d-block" href="https://www.acmicpc.net/login?help=1"><span class="g-pos-rel g-top-2"><span class="g-hidden-sm-down" style="color: #fff">로그인</span></span></a></div></div></div></nav></div><form action="https://www.acmicpc.net/logout" method="post" id="logout_form" style="display: none;"><input type='hidden' value='1' name="help"><input type='hidden' value='/' name="next"></form></header><main class="container-fluid px-0 g-pt-65"><div class="row no-gutters g-pos-rel g-overflow-x-hidden"><div id="sideNav" class="col-auto u-sidebar-navigation-v1 u-sidebar-navigation--dark"><ul id="sideNavMenu" class="u-sidebar-navigation-v1-menu u-side-nav--top-level-menu g-min-height-100vh mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/rule"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-announcement"></i></span><span class="media-body align-self-center">이용 규칙</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/rule/contest"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-announcement"></i></span><span class="media-body align-self-center">대회 규칙</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-judge"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-check-box"></i></span><span class="media-body align-self-center">채점</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-judge" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/judge/info"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-check"></i></span><span class="media-body align-self-center">채점 정보</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/judge/queue"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-layout-menu-full"></i></span><span class="media-body align-self-center">채점 큐</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/judge/time-and-memory"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-time"></i></span><span class="media-body align-self-center">시간과 메모리</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/judge/rejudge"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-loop"></i></span><span class="media-body align-self-center">재채점</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/judge/rte"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-alert"></i></span><span class="media-body align-self-center">런타임 에러</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-status"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-dashboard"></i></span><span class="media-body align-self-center">상태</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-status" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/status/problem"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-book"></i></span><span class="media-body align-self-center">문제</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/status/server-and-queue"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-server"></i></span><span class="media-body align-self-center">채점 서버와 큐</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/status/language"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-world"></i></span><span class="media-body align-self-center">언어 채점</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-problem"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-book"></i></span><span class="media-body align-self-center">문제</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-problem" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/problem/style"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-layers-alt"></i></span><span class="media-body align-self-center">문제 스타일</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/problem/add"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-pencil-alt"></i></span><span class="media-body align-self-center">문제 출제</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-contest"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-cup"></i></span><span class="media-body align-self-center">대회</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-contest" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/contest/open"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-plus"></i></span><span class="media-body align-self-center">대회 개최</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/contest/participation"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-hand-open"></i></span><span class="media-body align-self-center">대회 참가</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened  has-active"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-language"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-world"></i></span><span class="media-body align-self-center">언어</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-language" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 active" href="/language/info"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-info-alt"></i></span><span class="media-body align-self-center">언어 정보</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/language/update"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-reload"></i></span><span class="media-body align-self-center">언어 업데이트</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-user"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-user"></i></span><span class="media-body align-self-center">유저</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-user" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/user/school"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-id-badge"></i></span><span class="media-body align-self-center">학교/회사</span></a></li></ul></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/workbook"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-agenda"></i></span><span class="media-body align-self-center">문제집</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/group"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-package"></i></span><span class="media-body align-self-center">그룹</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/stats"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-bar-chart"></i></span><span class="media-body align-self-center">통계</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/question"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-help-alt"></i></span><span class="media-body align-self-center">질문</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/faq"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-comment-alt"></i></span><span class="media-body align-self-center">자주묻는 질문</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item"><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12 " href="/ad"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-star"></i></span><span class="media-body align-self-center">광고</span></a></li><li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item "><a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="javascript:void(0);" data-hssm-target="#s-etc"><span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18"><i class="hs-admin-archive"></i></span><span class="media-body align-self-center">기타</span><span class="d-flex align-self-center u-side-nav--control-icon"><i class="hs-admin-angle-right"></i></span><span class="u-side-nav--has-sub-menu__indicator"></span></a><ul id="s-etc" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0"><li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item"><a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 " href="/etc/short"><span class="d-flex align-self-center g-mr-15 g-mt-minus-1"><i class="hs-admin-arrows-horizontal"></i></span><span class="media-body align-self-center">짧은 주소</span></a></li></ul></li></ul></div><div class="col g-ml-45 g-ml-0--lg g-pb-65--md g-bg-lightblue-v10-opacity-0_5"><div class="g-hidden-sm-down g-bg-gray-light-v8 g-pa-20"><ul class="u-list-inline g-color-gray-dark-v6"><li class="list-inline-item g-mr-10"><span class="g-valign-middle">언어</span><i class="hs-admin-angle-right g-font-size-12 g-color-gray-light-v6 g-valign-middle g-ml-10"></i></li><li class="list-inline-item"><span class="g-valign-middle">언어 정보</span></li></ul></div><div class="g-pa-20"><div class="row">
+<div class="col-xl-12"><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-84"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++17</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 84</li><li>컴파일: <code>g++ Main.cc -o Main -O2 -Wall -lm -static -std=gnu++17 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-3"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Java 8</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 3</li><li>컴파일: <code>javac -J-Xms1024m -J-Xmx1920m -J-Xss512m -encoding UTF-8 Main.java</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 Main</code></li><li>버전: <a href="https://www.java.com/">Java(TM) SE Runtime Environment (build 1.8.0_201-b09)</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-java" readonly>import java.util.*;
+public class Main{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		System.out.println(a + b);
+	}
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-28"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Python 3</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 28</li><li>컴파일: <code>python3 -W ignore -c &quot;import py_compile; py_compile.compile(r'Main.py')&quot;</code></li><li>실행: <code>python3 -W ignore Main.py</code></li><li>버전: <a href="https://www.python.org/">Python 3.11.5</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-python" readonly>a, b = map(int, input().split())
+print(a+b)
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-75"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C11</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 75</li><li>컴파일: <code>gcc Main.c -o Main -O2 -Wall -lm -static -std=gnu11 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gcc (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-73"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">PyPy3</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 73</li><li>컴파일: <code>pypy3 -W ignore -c &quot;import py_compile; py_compile.compile(r'Main.py')&quot;</code></li><li>실행: <code>pypy3 -W ignore Main.py</code></li><li>버전: <a href="https://www.pypy.org/">Python 3.10.12, PyPy 7.3.12 with GCC 10.2.1 20210130 (Red Hat 10.2.1-11)</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+128 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-python" readonly>a, b = map(int, input().split())
+print(a+b)
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-0"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C99</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 0</li><li>컴파일: <code>gcc Main.c -o Main -O2 -Wall -lm -static -std=gnu99 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gcc (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-1"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++98</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 1</li><li>컴파일: <code>g++ Main.cc -o Main -O2 -Wall -lm -static -std=gnu++98 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-49"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++11</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 49</li><li>컴파일: <code>g++ Main.cc -o Main -O2 -Wall -lm -static -std=gnu++11 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-88"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++14</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 88</li><li>컴파일: <code>g++ Main.cc -o Main -O2 -Wall -lm -static -std=gnu++14 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-91"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Java 8 (OpenJDK)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 91</li><li>컴파일: <code>javac -release 8 -J-Xms1024m -J-Xmx1920m -J-Xss512m -encoding UTF-8 Main.java</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -XX:+UseSerialGC -DONLINE_JUDGE=1 -DBOJ=1 Main</code></li><li>버전: <a href="https://openjdk.java.net/">openjdk version &quot;16.0.1&quot; 2021-04-20</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-java" readonly>import java.util.*;
+public class Main{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		System.out.println(a + b);
+	}
+}
+ </textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-93"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Java 11</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 93</li><li>컴파일: <code>javac -release 11 -J-Xms1024m -J-Xmx1920m -J-Xss512m -encoding UTF-8 Main.java</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -XX:+UseSerialGC -DONLINE_JUDGE=1 -DBOJ=1 Main</code></li><li>버전: <a href="https://openjdk.java.net/">openjdk version &quot;16.0.1&quot; 2021-04-20</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-java" readonly>import java.util.*;
+public class Main{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		System.out.println(a + b);
+	}
+}
+ </textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-95"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++20</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 95</li><li>컴파일: <code>g++ Main.cc -o Main -O2 -Wall -lm -static -std=gnu++20 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-6"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Python 2</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 6</li><li>컴파일: <code>python -c &quot;import py_compile; py_compile.compile(r'Main.py')&quot;</code></li><li>실행: <code>python Main.py</code></li><li>버전: <a href="https://www.python.org/">Python 2.7.18</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-python" readonly>a, b = map(int, raw_input().split())
+print a+b
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-32"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">PyPy2</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 32</li><li>컴파일: <code>pypy -c &quot;import py_compile; py_compile.compile(r'Main.py')&quot;</code></li><li>실행: <code>pypy Main.py</code></li><li>버전: <a href="https://www.pypy.org/">Python 2.7.18, PyPy 7.3.12 with GCC 10.2.1 20210130 (Red Hat 10.2.1-11)</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+128 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-python" readonly>a, b = map(int, raw_input().split())
+print a+b
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-68"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Ruby</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 68</li><li>컴파일: <code>ruby -c Main.rb</code></li><li>실행: <code>ruby Main.rb</code></li><li>버전: <a href="https://www.ruby-lang.org/">ruby 3.2.2 (2023-03-30 revision e51014f9c0)</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-ruby" readonly>a, b = gets.split
+puts a.to_i + b.to_i
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-69"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Kotlin (JVM)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 69</li><li>컴파일: <code>kotlinc-jvm -J-Xms1024m -J-Xmx1920m -J-Xss512m -include-runtime -d Main.jar Main.kt</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -XX:+UseSerialGC -DONLINE_JUDGE=1 -DBOJ=1 -jar Main.jar</code></li><li>버전: <a href="https://kotlinlang.org/">kotlinc-jvm 1.9.10 (JRE 1.8.0_201-b09)</a></li><li>런타임: <a href="#language-3">Java 8</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-kotlin" readonly>import java.util.Scanner
+
+fun main(args: Array&lt;String&gt;) {
+    val sc: Scanner = Scanner(System.`in`)
+    var a = sc.nextInt()
+    var b = sc.nextInt()
+    println(a+b)
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-92"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Kotlin (Native)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 92</li><li>컴파일: <code>kotlinc-native -o Main -opt Main.kt</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://kotlinlang.org/">kotlinc-native 1.6.10 (JRE 1.8.0_201-b09)</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-kotlin" readonly>fun main(args: Array&lt;String&gt;) {
+    var nums = readLine()!!.split(&quot; &quot;)
+    var a = nums[0].toInt()
+    var b = nums[1].toInt()
+    println(a+b)
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-74"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Swift</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 74</li><li>컴파일: <code>swiftc -O -o Main Main.swift</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://swift.org/">Swift version 5.5.2 (swift-5.5.2-RELEASE)</a></li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-swift" readonly>import Foundation
+let line = readLine()!
+let lineArr = line.components(separatedBy: &quot; &quot;)
+let a = Int(lineArr[0])!
+let b = Int(lineArr[1])!
+print(a+b)</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-58"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Text</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 58</li><li>컴파일: <code>fromdos Main.txt</code></li><li>실행: <code>cat Main.txt</code></li><li>버전: <a href="https://www.gnu.org/software/coreutils/cat">cat (GNU coreutils) 8.25</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly></textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-86"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C#</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 86</li><li>컴파일: <code>dotnet new console --force -o Main &amp;&amp; dotnet publish Main --configuration Release --self-contained true --runtime linux-x64</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://dotnet.microsoft.com/download">6.0.101</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csharp" readonly>using System;
+
+namespace Baekjoon {
+    class Program {
+        static void Main() {
+            string s = Console.ReadLine();
+            string[] ss = s.Split();
+            int a = int.Parse(ss[0]);
+            int b = int.Parse(ss[1]);
+            Console.WriteLine(a+b);
+        }
+    }
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-17"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">node.js</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 17</li><li>실행: <code>node --stack-size=65536 Main.js</code></li><li>버전: <a href="https://nodejs.org/">v16.13.1</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/javascript" readonly>var fs = require('fs');
+var input = fs.readFileSync('/dev/stdin').toString().split(' ');
+var a = parseInt(input[0]);
+var b = parseInt(input[1]);
+console.log(a+b);
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-12"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Go</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 12</li><li>컴파일: <code>go build Main.go</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://golang.org/">go version go1.18.1 linux/amd64</a></li><li>시간 제한: +2 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-go" readonly>package main
+ 
+import &quot;fmt&quot;
+ 
+func main() {
+    var a, b int
+    fmt.Scanf(&quot;%d %d&quot;, &amp;a, &amp;b)
+    fmt.Printf(&quot;%d\n&quot;, a+b)
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-90"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Go (gccgo)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 90</li><li>컴파일: <code>gccgo -O2 -o Main -static Main.go</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gccgo (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-go" readonly>package main
+ 
+import &quot;fmt&quot;
+ 
+func main() {
+    var a, b int
+    fmt.Scanf(&quot;%d %d&quot;, &amp;a, &amp;b)
+    fmt.Printf(&quot;%d\n&quot;, a+b)
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-107"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Java 15</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 107</li><li>컴파일: <code>javac -release 15 -J-Xms1024m -J-Xmx1920m -J-Xss512m -encoding UTF-8 Main.java</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -XX:+UseSerialGC -DONLINE_JUDGE=1 -DBOJ=1 Main</code></li><li>버전: <a href="https://openjdk.java.net/">openjdk version &quot;16.0.1&quot; 2021-04-20</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-java" readonly>import java.util.*;
+public class Main{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		System.out.println(a + b);
+	}
+}
+ </textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-29"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">D</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 29</li><li>컴파일: <code>dmd -boundscheck=off -O -of=Main -fPIC -inline -release Main.d</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://dlang.org/dmd.html">DMD64 D Compiler v2.098.1</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-d" readonly>import std.stdio;
+import std.conv;
+import std.string;
+ 
+void main() {
+    string[] r;
+    try
+        r = readln().split();
+    catch (StdioException e)
+        r = [&quot;0&quot;, &quot;0&quot;];
+    auto a = to!int(r[0]);
+    auto b = to!int(r[1]);
+    auto ans = a + b;
+    writeln(ans);
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-100"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">D (LDC)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 100</li><li>컴파일: <code>ldc2 -boundscheck=off -O -of=Main -relocation-model=pic -release Main.d</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://github.com/ldc-developers/ldc">LDC - the LLVM D compiler (1.26.0): based on DMD v2.096.1 and LLVM 11.0.1</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-d" readonly>import std.stdio;
+import std.conv;
+import std.string;
+ 
+void main() {
+    string[] r;
+    try
+        r = readln().split();
+    catch (StdioException e)
+        r = [&quot;0&quot;, &quot;0&quot;];
+    auto a = to!int(r[0]);
+    auto b = to!int(r[1]);
+    auto ans = a + b;
+    writeln(ans);
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-37"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">F# (Mono)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 37</li><li>컴파일: <code>fsharpc Main.fs</code></li><li>실행: <code>mono --optimize=all Main.exe</code></li><li>버전: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52590">Microsoft (R) F# Compiler version 11.0.0.0 for F# 5.0</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-fsharp" readonly>open System
+let plus = (fun (a:string) (b:string) -&gt; Console.WriteLine(int(a)+int(b))) (Console.ReadLine()) (Console.ReadLine());
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/2558">2558번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-7"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">PHP</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 7</li><li>컴파일: <code>php -l Main.php</code></li><li>실행: <code>php -d display_errors=stderr Main.php</code></li><li>버전: <a href="https://www.php.net/">PHP 8.1.1</a></li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-php" readonly>&lt;?php
+fscanf(STDIN,&quot;%d %d&quot;,$a,$b);
+fprintf(STDOUT,&quot;%d&quot;,$a+$b);
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-44"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Rust 2015</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 44</li><li>컴파일: <code>rustc --edition 2015 -O -o Main Main.rs</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.rust-lang.org/">rustc 1.73.0 (cc66ad468 2023-10-03)</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-rustsrc" readonly>use std::io;
+
+fn main() {
+    let mut s = String::new();
+
+    io::stdin().read_line(&amp;mut s).unwrap();
+
+    let values:Vec&lt;i32&gt; = s
+        .as_mut_str()
+        .split_whitespace()
+        .map(|s| s.parse().unwrap())
+        .collect();
+
+    println!(&quot;{}&quot;, values[0] + values[1]);
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-94"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Rust 2018</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 94</li><li>컴파일: <code>rustc --edition 2018 -O -o Main Main.rs</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.rust-lang.org/">rustc 1.73.0 (cc66ad468 2023-10-03)</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-rustsrc" readonly>use std::io;
+
+fn main() {
+    let mut s = String::new();
+
+    io::stdin().read_line(&amp;mut s).unwrap();
+
+    let values:Vec&lt;i32&gt; = s
+        .as_mut_str()
+        .split_whitespace()
+        .map(|s| s.parse().unwrap())
+        .collect();
+
+    println!(&quot;{}&quot;, values[0] + values[1]);
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-113"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Rust 2021</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 113</li><li>컴파일: <code>rustc --edition 2021 -O -o Main Main.rs</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.rust-lang.org/">rustc 1.73.0 (cc66ad468 2023-10-03)</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-rustsrc" readonly>use std::io;
+
+fn main() {
+    let mut s = String::new();
+
+    io::stdin().read_line(&amp;mut s).unwrap();
+
+    let values:Vec&lt;i32&gt; = s
+        .as_mut_str()
+        .split_whitespace()
+        .map(|s| s.parse().unwrap())
+        .collect();
+
+    println!(&quot;{}&quot;, values[0] + values[1]);
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-2"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Pascal</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 2</li><li>컴파일: <code>fpc Main.pas -O2 -Co -Ct -Ci</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.freepascal.org/">Free Pascal Compiler version 3.2.2 [2021/05/16] for x86_64</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-pascal" readonly>program p1000(Input,Output); 
+var 
+  a,b:Integer; 
+begin 
+   Readln(a,b);
+   Writeln(a+b);
+end.
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-15"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Scala</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 15</li><li>컴파일: <code>scala-cli compile Main.scala</code></li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -XX:+UseSerialGC -DONLINE_JUDGE=1 -DBOJ=1 -cp &quot;$(scala-cli compile --class-path Main.scala)&quot; M</code></li><li>버전: <a href="https://scala-cli.virtuslab.org/">Scala CLI 0.0.9</a></li><li>런타임: <a href="#language-3">Java 8</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+128 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-scala" readonly>object Main {
+  def main(args: Array[String]): Unit = {
+    var num = (scala.io.StdIn.readLine() split &quot; &quot; take 2 map (_.toInt));
+    println(num(0)+num(1))
+  }
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-16"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Lua</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 16</li><li>컴파일: <code>luac -p Main.lua</code></li><li>실행: <code>lua Main.lua</code></li><li>버전: <a href="https://www.lua.org/">Lua 5.4.3</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-lua" readonly>a,b = io.read(&quot;*number&quot;, &quot;*number&quot;)
+print(a+b)
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-8"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Perl</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 8</li><li>컴파일: <code>perl -c Main.pl</code></li><li>실행: <code>perl Main.pl</code></li><li>버전: <a href="https://www.perl.org/">Perl v5.34.0</a></li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-perl" readonly>#!/usr/bin/perl
+my $a = &lt;STDIN&gt;;
+my @b = split(/ /, $a);
+
+my $ans = @b[0] + @b[1];
+
+print $ans;
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-4"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Ruby 1.8</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 4</li><li>컴파일: <code>ruby -c Main.rb</code></li><li>실행: <code>ruby Main.rb</code></li><li>버전: <a href="https://www.ruby-lang.org/">ruby 1.8.7 (2011-06-30 patchlevel 352) [i686-linux]</a></li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-ruby" readonly>a, b = gets.split
+puts a.to_i + b.to_i
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-65"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Ruby 1.9</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 65</li><li>컴파일: <code>ruby -c Main.rb</code></li><li>실행: <code>ruby Main.rb</code></li><li>버전: <a href="https://www.ruby-lang.org/">ruby 1.9.3p484 (2013-11-22 revision 43786) [i686-linux]</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-ruby" readonly>a, b = gets.split
+puts a.to_i + b.to_i
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-11"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Haskell</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 11</li><li>컴파일: <code>ghc Main.hs -o Main -O2 -Wall -lm</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.haskell.org/ghc/">The Glorious Glasgow Haskell Compilation System, version 8.10.1</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-haskell" readonly>main =  print . sum . map read . words =&lt;&lt; getLine</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-108"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">F#</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 108</li><li>컴파일: <code>dotnet new console --language &quot;F#&quot; --force -o Main &amp;&amp; dotnet publish Main --configuration Release --self-contained true --runtime linux-x64</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://dotnet.microsoft.com/download">6.0.101</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-fsharp" readonly>open System
+
+[&lt;EntryPoint&gt;]
+let main argv =
+    let line = Console.ReadLine().Split()
+    let a = Convert.ToInt32(line.[0])
+    let b = Convert.ToInt32(line.[1])
+    printfn &quot;%d&quot; (a+b)
+    0</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-109"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Visual Basic</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 109</li><li>컴파일: <code>dotnet new console --language &quot;VB&quot; --force -o Main &amp;&amp; dotnet publish Main --configuration Release --self-contained true --runtime linux-x64</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://dotnet.microsoft.com/download">6.0.101</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-vb" readonly>Module Main
+ 
+  Sub Main()
+    Dim s() As String = Nothing
+ 
+    s = Console.ReadLine().Split(&quot; &quot;c)
+    Console.WriteLine(CInt(s(0)) + CInt(s(1)))
+  End Sub
+ 
+End Module
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-10"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Objective-C</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 10</li><li>컴파일: <code>gcc Main.m -o Main `gnustep-config --objc-flags` `gnustep-config --base-libs` -O2 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gcc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-objectivec" readonly>#import &lt;Foundation/Foundation.h&gt;
+ 
+int main (void)
+{
+    NSInteger a,b;
+    scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+    printf(&quot;%d\n&quot;,a+b);
+    return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-64"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Objective-C++</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 64</li><li>컴파일: <code>g++ Main.mm -o Main `gnustep-config --objc-flags` `gnustep-config --base-libs` -O2 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">g++ (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-objectivec" readonly>#import &lt;Foundation/Foundation.h&gt;
+ 
+int main (void)
+{
+    NSInteger a,b;
+    scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+    printf(&quot;%d\n&quot;,a+b);
+    return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-59"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C99 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 59</li><li>컴파일: <code>clang Main.c -o Main -O2 -Wall -lm -static -std=c99 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-60"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++98 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 60</li><li>컴파일: <code>clang++ Main.cc -o Main -O2 -Wall -lm -static -std=c++98 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-62"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C# 6.0 (Mono)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 62</li><li>컴파일: <code>mcs -codepage:utf8 -warn:0 -optimize+ -checked+ -clscheck- -reference:System.Numerics.dll -out:Main.exe Main.cs</code></li><li>실행: <code>mono --optimize=all Main.exe</code></li><li>버전: <a href="https://www.mono-project.com/docs/about-mono/languages/csharp/">Mono C# compiler version 6.12.0.122</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csharp" readonly>using System;
+
+public class Program {
+    public static void Main() {
+        string s = Console.ReadLine();
+        string[] ss = s.Split();
+        int a = int.Parse(ss[0]);
+        int b = int.Parse(ss[1]);
+        Console.WriteLine(a+b);
+    }
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-66"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++11 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 66</li><li>컴파일: <code>clang++ Main.cc -o Main -O2 -Wall -lm -static -std=c++11 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-67"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++14 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 67</li><li>컴파일: <code>clang++ Main.cc -o Main -O2 -Wall -lm -static -std=c++14 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-77"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C11 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 77</li><li>컴파일: <code>clang Main.c -o Main -O2 -Wall -lm -static -std=c11 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-85"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++17 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 85</li><li>컴파일: <code>clang++ Main.cc -o Main -O2 -Wall -lm -static -std=c++17 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-96"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C++20 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 96</li><li>컴파일: <code>clang++ Main.cc -o Main -O2 -Wall -lm -static -std=c++20 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a, b;
+	cin &gt;&gt; a &gt;&gt; b;
+	cout &lt;&lt; a+b &lt;&lt; endl;
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-79"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Golfscript</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 79</li><li>실행: <code>ruby golfscript.rb Main.gs</code></li><li>버전: <a href="http://www.golfscript.com/golfscript/">cded542533c2c8f72ab2d5935714f739b0357690</a></li><li>런타임: <a href="#language-68">Ruby</a></li><li>시간 제한: +2 초</li><li>메모리 제한: +64 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>~+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-101"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C90</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 101</li><li>컴파일: <code>gcc Main.c -o Main -O2 -Wall -lm -static -std=gnu90 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gcc (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-102"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C2x</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 102</li><li>컴파일: <code>gcc Main.c -o Main -O2 -Wall -lm -static -std=gnu2x -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">gcc (GCC) 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-103"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C90 (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 103</li><li>컴파일: <code>clang Main.c -o Main -O2 -Wall -lm -static -std=c89 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-104"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C2x (Clang)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 104</li><li>컴파일: <code>clang Main.c -o Main -O2 -Wall -lm -static -std=c2x -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://clang.llvm.org/">clang version 12.0.0-++20210319082646+4990141a4366-1~exp1~20210319193401.61</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csrc" readonly>#include &lt;stdio.h&gt;
+int main() {
+	int a, b;
+	scanf(&quot;%d %d&quot;,&amp;a,&amp;b);
+	printf(&quot;%d\n&quot;,a+b);
+	return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-106"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">TypeScript</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 106</li><li>컴파일: <code>tsc Main.ts</code></li><li>실행: <code>node --stack-size=65536 Main.js</code></li><li>버전: <a href="https://www.typescriptlang.org/">Version 4.2.4</a></li><li>런타임: <a href="#language-17">node.js</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="application/typescript" readonly>import fs = require('fs')
+var input = fs.readFileSync('/dev/stdin').toString().split(' ');
+var a = parseInt(input[0]);
+var b = parseInt(input[1]);
+console.log(a+b);</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-27"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Assembly (32bit)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 27</li><li>컴파일: <code>nasm -f elf32 -o Main.o Main.asm &amp;&amp; gcc -m32 -o Main Main.o</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.nasm.us/">NASM version 2.15.05</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>section .data
+    input: db &quot;%d %d&quot;,0
+    output: db &quot;%d&quot;,10,0
+
+    a: times 4 db 0
+    b: times 4 db 0
+
+section .text
+    global main
+    extern scanf
+    extern printf
+
+main:
+    push ebx
+    push ecx
+
+    push b
+    push a
+    push input
+    call scanf
+    add esp, 12
+    
+    mov ebx, dword[a]
+    mov ecx, dword[b]
+    add ebx, ecx
+
+    push ebx
+    push output
+    call printf
+    add esp, 8
+    pop ecx
+    pop ebx
+    mov eax,0
+    ret
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-87"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Assembly (64bit)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 87</li><li>컴파일: <code>nasm -f elf64 -o Main.o Main.asm &amp;&amp; gcc -o Main Main.o</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.nasm.us/">NASM version 2.15.05</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>section .data
+    input: db &quot;%d %d&quot;,0
+    output: db &quot;%d&quot;,10,0
+
+    a: times 4 db 0
+    b: times 4 db 0
+
+section .text
+    global main
+    extern scanf
+    extern printf
+
+main:
+	push rbp
+
+	mov rdi, input
+	lea rsi, [a]
+	lea rdx, [b]
+	mov rax, 0
+	call scanf
+
+	mov rax, [a]
+	mov rbx, [b]
+	add rax, rbx
+
+	mov rdi, output
+	mov rsi, rax
+	mov rax, 0
+	call printf
+
+	pop rbp
+	mov rax,0
+    ret</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-9"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">C# 3.0 (Mono)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 9</li><li>컴파일: <code>mcs -langversion:3 -codepage:utf8 -warn:0 -optimize+ -checked+ -clscheck- -out:Main.exe Main.cs</code></li><li>실행: <code>mono --optimize=all Main.exe</code></li><li>버전: <a href="https://www.mono-project.com/docs/about-mono/languages/csharp/">Mono C# compiler version 6.12.0.122</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-csharp" readonly>using System;
+
+public class Program {
+    public static void Main() {
+        string s = Console.ReadLine();
+        string[] ss = s.Split();
+        int a = int.Parse(ss[0]);
+        int b = int.Parse(ss[1]);
+        Console.WriteLine(a+b);
+    }
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-20"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">VB.NET 2.0 (Mono)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 20</li><li>컴파일: <code>vbnc2 -out:Main.exe Main.vb</code></li><li>실행: <code>mono --optimize=all Main.exe</code></li><li>버전: <a href="https://www.mono-project.com/docs/about-mono/languages/visualbasic/">Visual Basic.Net Compiler version 0.0.0.5943 (Mono 4.7 - tarball)</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-vb" readonly>Module Main
+ 
+  Sub Main()
+    Dim s() As String = Nothing
+ 
+    s = Console.ReadLine().Split(&quot; &quot;c)
+    Console.WriteLine(CInt(s(0)) + CInt(s(1)))
+  End Sub
+ 
+End Module
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-63"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">VB.NET 4.0 (Mono)</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 63</li><li>컴파일: <code>vbnc -out:Main.exe Main.vb</code></li><li>실행: <code>mono --optimize=all Main.exe</code></li><li>버전: <a href="https://www.mono-project.com/docs/about-mono/languages/visualbasic/">Visual Basic.Net Compiler version 0.0.0.5943 (Mono 4.7 - tarball)</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-vb" readonly>Module Main
+ 
+  Sub Main()
+    Dim s() As String = Nothing
+ 
+    s = Console.ReadLine().Split(&quot; &quot;c)
+    Console.WriteLine(CInt(s(0)) + CInt(s(1)))
+  End Sub
+ 
+End Module
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-5"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Bash</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 5</li><li>컴파일: <code>bash -n Main.sh</code></li><li>실행: <code>bash Main.sh</code></li><li>버전: <a href="https://www.gnu.org/software/bash/">GNU bash, version 5.1.8(1)-release (x86_64-pc-linux-gnu)</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-sh" readonly>read a b
+echo $(($a+$b))
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-13"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Fortran</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 13</li><li>컴파일: <code>gfortran Main.f95  -o Main -O2 -Wall -fmax-array-constructor=2097152 -static</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/fortran/">GNU Fortran (GCC) 11.1.0</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-fortran" readonly>      PROGRAM P1000
+
+      IMPLICIT NONE
+      INTEGER :: A, B
+
+      READ(*,*) A, B
+      WRITE(*, '(I0)') A + B
+
+      END PROGRAM P1000
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-14"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Scheme</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 14</li><li>컴파일: <code>csc -output-file Main -O5 Main.scm</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.call-cc.org/">Version 5.2.0 (rev 317468e4)</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-scheme" readonly>(write (+ (read) (read)))</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-19"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Ada</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 19</li><li>컴파일: <code>gnatmake -O2 -o Main Main.ada</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://gcc.gnu.org/">GNATMAKE 11.1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>with Ada.Integer_Text_Io;
+procedure Main is
+   A, B : Integer;
+begin
+   Ada.Integer_Text_Io.Get (Item =&gt; A);
+   Ada.Integer_Text_Io.Get (Item =&gt; B);
+   Ada.Integer_Text_Io.Put (A+B, Width=&gt;1, Base=&gt;10);
+end Main;
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-21"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">awk</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 21</li><li>컴파일: <code>gawk --source &quot;BEGIN { exit(0) } END { exit(0) }&quot; --file Main.awk</code></li><li>실행: <code>gawk --file Main.awk</code></li><li>버전: <a href="https://www.gnu.org/software/gawk/">GNU Awk 5.1.1, API: 3.1 (GNU MPFR 3.1.4, GNU MP 6.1.0)</a></li><li>메모리 제한: +16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>{ print $1 + $2 }
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-22"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">OCaml</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 22</li><li>컴파일: <code>ocamlopt -o Main Main.ml -O2</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://ocaml.org/">The OCaml toplevel, version 4.11.1</a></li><li>메모리 제한: +32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-ocaml" readonly>Scanf.scanf &quot;%d %d&quot; (fun a b -&gt; Printf.printf &quot;%d\n&quot; (a + b))
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-23"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Brainf**k</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 23</li><li>컴파일: <code>./bfi -c Main.bf &amp;&amp; gcc Main.c -o Main -O2 -Wall -lm -static -std=c11 -DONLINE_JUDGE -DBOJ</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://github.com/rdebath/Brainfuck">bfi: Version 1.1.0 dabe513 on Linux x64</a></li><li>시간 제한: +1 초</li><li>예제 소스 작성: <a href = "/user/xhark">xhark</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-brainfuck" readonly>&gt;&gt;&gt;&gt;&gt;&lt;&lt;+&gt;&gt;,&gt;,,&gt;
+++++++[&lt;--------&gt;-]
+++++++[&lt;&lt;--------&gt;&gt;-]
+&lt;&lt;[&gt;+&lt;-]&gt;&gt;
+++++++++++[-&lt;[-&gt;&gt;]&lt;]
+&lt;&lt;[++++++++&gt;&gt;&gt;&gt;[&lt;&lt;&lt;&lt;-&gt;&gt;&gt;&gt;-]&lt;&lt;&lt;&lt;&lt;++++++[&gt;++++++++&lt;-]&gt;.&lt;]
+&lt;&lt;[&lt;++++++[&gt;++++++++&lt;-]&gt;.&gt;&gt;&gt;&lt;++++++[&gt;++++++++&lt;-]&gt;.&gt;]
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-24"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Whitespace</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 24</li><li>실행: <code>whitespace Main.ws</code></li><li>버전: <a href="https://github.com/hostilefork/whitespacers">Whitespace</a></li><li>예제 소스 작성: <a href = "/user/xhark">xhark</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>    
+	
+	    	
+	
+	    	
+	
+	     
+			   	
+				      		     
+	  		
+ 	
+
+
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-26"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Tcl</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 26</li><li>실행: <code>tclsh Main.tcl</code></li><li>버전: <a href="https://www.tcl.tk/">8.6</a></li><li>시간 제한: +2 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-tcl" readonly>scan [gets stdin] &quot;%d %d&quot; x y
+puts [expr {$x + $y}]
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-34"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Rhino</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 34</li><li>실행: <code>java -Xms1024m -Xmx1920m -Xss512m -Dfile.encoding=UTF-8 -jar rhino.jar Main.js</code></li><li>버전: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino">Rhino 1.7.13</a></li><li>런타임: <a href="#language-3">Java 8</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/javascript" readonly>importPackage(java.util);
+importPackage(java.lang);
+(function(){
+    var sc = new Scanner(System['in']);
+    var a = sc.nextInt();
+    var b = sc.nextInt();
+    print(a+b);
+})();
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-35"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Cobol</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 35</li><li>컴파일: <code>cobc -x -O2 -o Main Main.cob</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://sourceforge.net/projects/open-cobol/">cobc (GnuCOBOL) 3.1.2.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-cobol" readonly>       IDENTIFICATION DIVISION.
+       PROGRAM-ID. Main.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 A        PIC 9(1).
+       01 B        PIC 9(1).
+       01 C1       PIC 9(1).
+       01 C2       PIC 9(2).
+
+       PROCEDURE DIVISION.
+       Begin.
+           ACCEPT A
+           ACCEPT B
+
+           ADD A B GIVING C1
+           ADD A B GIVING C2
+
+           IF C2 &lt;= 9 then
+               DISPLAY C1
+           ELSE
+               DISPLAY C2
+           END-IF
+
+           STOP RUN.</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/2558">2558번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-41"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Pike</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 41</li><li>컴파일: <code>pike -e compile_file(\&quot;Main.pike\&quot;);</code></li><li>실행: <code>pike Main.pike</code></li><li>버전: <a href="https://pike.lysator.liu.se/">Pike v8.0 release 1116</a></li><li>시간 제한: +5 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-c++src" readonly>int main() {
+    string line = Stdio.stdin-&gt;gets();
+    sscanf(line, &quot;%d %d&quot;, int a, int b);
+    write(a+b +&quot;\n&quot;);
+    return 0;
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-43"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">sed</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 43</li><li>컴파일: <code>fromdos Main.sed</code></li><li>실행: <code>sed -f Main.sed</code></li><li>버전: <a href="https://www.gnu.org/software/sed/">sed (GNU sed) 4.8</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>: Loop
+/^-*00* /s///
+/ -*00*$/s///
+t
+s/\(.[0-9]*\) \(.[0-9]*\)/\1;987654321000009999000999009909 \2;012345678999990000999000990090/
+s/ \(-\)*\(9*;\)/ \10\2/
+s/\([^0]\)\(0*\);[^0]*\1\(.\).*\2\(9*\).* \(.*\)/\3\4 \5/
+s/\([^9]\)\(9*\);[^9]*\1\(.\).*\2\(0*\).*/\3\4/
+t Loop
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-46"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Boo</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 46</li><li>컴파일: <code>booc.exe Main.boo</code></li><li>버전: <a href="https://boo-language.github.io/">Boo Compiler version 0.9.4.9</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>import System
+a=Console.ReadLine().Split()
+print int.Parse(a[0])+int.Parse(a[1])
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-47"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">INTERCAL</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 47</li><li>실행: <code>ick Main.i</code></li><li>버전: <a href="http://www.catb.org/~esr/intercal/">C-INTERCAL 0.29</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>생략</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-48"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">bc</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 48</li><li>컴파일: <code>from Main.bc</code></li><li>실행: <code>bc -q Main.bc</code></li><li>버전: <a href="https://www.gnu.org/software/bc/">bc 1.07.1</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>a=read()
+b=read()
+print a+b
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-53"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Nemerle</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 53</li><li>컴파일: <code>ncc.exe -o Main -O Main.n</code></li><li>버전: <a href="http://nemerle.org/">Nemerle Compiler (ncc) version 1.2.0.539</a></li><li>시간 제한: +5 초</li><li>메모리 제한: +512 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>using System;
+using System.Console;
+ 
+module Main
+{
+    Main() : void
+    {
+        def a = ReadLine().Split();
+        WriteLine(int.Parse(a[0])+int.Parse(a[1]));
+    }    
+}
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-54"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Cobra</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 54</li><li>컴파일: <code>cobra -compile -o Main.cobra</code></li><li>버전: <a href="http://cobra-language.com/">The Cobra Programming Language 0.9.6 on Mono 6.12.0.90 CLR v4.0.30319</a></li><li>시간 제한: ×2+1 초</li><li>메모리 제한: ×2+16 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>class Sample
+
+    def main
+        input = Console.readLine.split
+        print int.parse(input[0]) + int.parse(input[1])
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-55"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Nimrod</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 55</li><li>컴파일: <code>nimrod compile -d:release Main.nim</code></li><li>버전: <a href="https://nim-lang.org/">Nim Compiler Version 1.4.0 [Linux: amd64]</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>import strutils
+
+var a = 0
+
+for num in split(readLine(stdin)):
+    a += parseInt(num)
+
+echo a</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-70"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Algol 68</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 70</li><li>컴파일: <code>a68g --check Main.a68</code></li><li>실행: <code>a68g Main.a68</code></li><li>버전: <a href="http://www.algol68.org/">Algol 68 Genie 2.8</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>INT sum;
+sum:=read int + read int;
+
+IF sum &lt; 10 THEN
+        printf(($dl$,sum))
+ELSE
+        printf(($2dl$,sum))
+FI</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-71"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Befunge</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 71</li><li>실행: <code>cfunge Main.bf</code></li><li>버전: <a href="https://github.com/VorpalBlade/cfunge">cfunge 0.9.0</a></li><li>메모리 제한: +32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>&amp;&amp;+.@</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-78"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">FreeBASIC</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 78</li><li>컴파일: <code>fbc Main.bas</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://www.freebasic.net/">FreeBASIC Compiler - Version 1.09.0 (2022-01-01), built for linux-x86_64 (64bit)</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>Dim a As Integer
+Dim b As Integer
+
+Open Cons For Input As #1
+Input #1, a, b
+Print Str(a+b)</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-81"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Haxe</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 81</li><li>컴파일: <code>haxe -main Main -python Main.py</code></li><li>실행: <code>python3 Main.py</code></li><li>버전: <a href="https://haxe.org/">Haxe 4.2.2</a></li><li>런타임: <a href="#language-28">Python 3</a></li><li>시간 제한: ×3+2 초</li><li>메모리 제한: ×2+32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-haxe" readonly>class Main {
+    static public function main():Void {
+        var a = Sys.stdin().readLine().split(&quot; &quot;).map(Std.parseInt);
+        trace(a[0]+a[1]);
+    }
+}</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-82"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">LOLCODE</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 82</li><li>실행: <code>lci Main.lol</code></li><li>버전: <a href="https://github.com/justinmeza/lci">lci v0.11.2
+</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>HAI 1.4
+    CAN HAS STDIO?
+    I HAS A a
+    I HAS A b
+    GIMMEH a
+    GIMMEH b
+    VISIBLE SUM OF a AN b
+KTHXBYE
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/2558">2558번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-83"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">아희</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 83</li><li>실행: <code>rpaheui-c -O2 Main.aheui</code></li><li>버전: <a href="https://github.com/aheui/rpaheui">rpaheui 1.2.2-24-gb66f488</a></li><li>메모리 제한: +32 MB</li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>방방다망함ㅋㅋㅋ
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-98"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Coq</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 98</li><li>버전: <a href="https://coq.inria.fr/">Coq 8.11.0 with OCaml 4.08.1</a></li></ul></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-99"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Minecraft</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 99</li><li>컴파일: <code>mc-compile Main.mca lime light_blue</code></li><li>실행: <code>mc-run Main</code></li><li>버전: <a href="https://github.com/kipa00/AplusB-mc">Minecraft</a></li></ul></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-105"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">SystemVerilog</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 105</li><li>컴파일: <code>iverilog -g2012 -o Main Main.sv</code></li><li>실행: <code>vvp Main</code></li><li>버전: <a href="http://iverilog.icarus.com/">Icarus Verilog version 11.0 (stable)</a></li><li>예제 소스 작성: <a href = "/user/bupjae">bupjae</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-systemverilog" readonly>module main;
+    logic[3:0] a, b;
+    logic[4:0] c;
+
+    adder adder(.a, .b, .c);
+
+    initial begin
+        integer code;
+        code = $fscanf(32'h8000_0000, &quot;%d %d&quot;, a, b);
+        #1 $display(&quot;%0d&quot;, c);
+        $finish;
+    end
+endmodule
+
+module adder(
+    input logic[3:0] a,
+    input logic[3:0] b,
+    output logic[4:0] c
+);
+    assign c = a + b;
+endmodule
+</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-110"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">APECODE</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 110</li><li>컴파일: <code>apecc Main.ape</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="http://2010.bapc.eu/">APECODE</a></li></ul></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-111"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">Crystal</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 111</li><li>컴파일: <code>crystal build Main.cr -o Main --release</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://crystal-lang.org/">Crystal 1.3.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/x-crystal" readonly>a, b = read_line.split.map(&amp;.to_i)
+puts a+b</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div><div class="card g-brd-gray-light-v7 u-card-v1 g-pa-15 g-pa-25-30--md g-mb-30" id="language-112"><header class="media g-mb-30"><h3 class="d-flex align-self-center g-font-size-16 g-color-black mb-0">엄준식</h3></header><section class="g-font-weight-400 g-font-size-15 g-color-black mb-0 g-line-height-2"><ul><li>언어 번호: 112</li><li>컴파일: <code>./ummc -o Main Main.umm</code></li><li>실행: <code>./Main</code></li><li>버전: <a href="https://github.com/rycont/umjunsik-lang">ummc 1.0</a></li></ul><div class="sample-source"><div class="form-group"><div class = "col-md-12"><textarea class="form-control no-mathjax codemirror-textarea" data-mime="text/plain" readonly>어떻게
+
+엄식?
+어엄식?
+
+동탄어?준... ....
+
+엄어,
+어엄어어.
+
+준.. ...
+식어어!
+
+이 사람이름이냐ㅋㅋ</textarea></div></div></div><p class="text-center">
+	<a href="https://www.acmicpc.net/problem/1000">1000번</a>
+ 예제 소스 코드</p></section></div></div>
+</div></div><footer id="footer" class="u-footer--bottom-sticky g-bg-white g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20"><div class="row align-items-center"><div class="col-md-4 g-mb-10 g-mb-0--md"><ul class="list-inline text-center text-md-left mb-0"><li class="list-inline-item"><a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="https://www.acmicpc.net">Baekjoon Online Judge</a></li></ul></div><div class="col-md-4 g-mb-10 g-mb-0--md"><ul class="list-inline text-center text-md-left mb-0"></ul></div><div class="col-md-4 text-center text-md-right"><ul class="list-inline mb-0"><li class="list-inline-item"><a class="g-color-gray-dark-v6 g-color-lightblue-v3--hover" href="https://startlink.io">스타트링크</a></li></ul></div></div></footer></div></div></main><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/jquery/jquery.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/popper.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/bootstrap/bootstrap.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/cookiejs/jquery.cookie.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/widget.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/version.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/keycode.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/position.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/unique-id.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/safe-active-element.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/widgets/menu.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/appear.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/fancybox/jquery.fancybox.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/js/hs.core.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/js/components/hs.side-nav.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/js/helpers/hs.hamburgers.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/js/components/hs.dropdown.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/js/components/hs.scrollbar.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/assets/js/helpers/hs.focus-state.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/js/components/hs.popup.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/noty/lib/noty.min.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/vendor/multiselect/js/jquery.multi-select.js"></script><script src="https://d2tya2pu1vb4ry.cloudfront.net/admin/assets/js/components/hs.multi-select.js"></script><script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script><script src="https://js.pusher.com/4.2/pusher.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ko.js"></script>
+<script src="/assets/js/stack.js?version=20240109"></script><script src="/assets/js/init.js?version=20240109"></script><script src="/assets/js/notification.js?version=20240109"></script><script>
+window.MathJax = {
+	tex: {
+		inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+		displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+		processEscapes: true,
+		tags: "ams",
+		autoload: {
+		  color: [],
+		  colorv2: ['color']
+		},
+		packages: { '[+]': ['noerrors'] }
+	},
+	options: {
+		ignoreHtmlClass: "no-mathjax|redactor-editor",
+		processHtmlClass: 'mathjax',
+		enableMenu: false
+	},
+	chtml: {
+		scale: 0.9
+	},
+	loader: {
+		load: ['input/tex', 'output/chtml', '[tex]/noerrors'],
+	}
+};
+</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/addon/edit/matchbrackets.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/addon/edit/closebrackets.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/addon/mode/loadmode.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/mode/meta.min.js"></script><script type="text/javascript" src="https://ddo7jzca0m2vt.cloudfront.net/js/codemirror.js?version=20240109"></script><script type="text/javascript">$(function() {OnlineJudgeCodeMirror.init('default', '');});</script>
+
+</body></html>
