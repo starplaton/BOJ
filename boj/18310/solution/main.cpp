@@ -8,30 +8,22 @@ using namespace std;
 typedef long long ll;
 
 int t, n, m, k;
+int ar[202020];
 
-void solve_1000() {
+void solve_18310() {
     cin >> n;
-    vector<int> ar(n);
     for (int i = 0; i < n; i++) cin >> ar[i];
-    sort(all(ar));
-
-    int mex = 1;
-    for (auto x : ar) {
-        if (mex == x) mex++;
-    }
-    int mx = ar[n - 1];
-    int ans = min(mx, mex);
-
-    if (ans & 1)
-        cout << "Alice\n";
+    sort(ar, ar + n);
+    if (n & 1)
+        cout << ar[n / 2];
     else
-        cout << "Bob\n";
+        cout << ar[n / 2 - 1];
 }
 
 int main() {
     cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(false);
     int TC = 1;
-    cin >> TC;
-    while (TC--) solve_1000();
+    // scanf("%d", &TC);
+    while (TC--) solve_18310();
     return 0;
 }
