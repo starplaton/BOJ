@@ -159,6 +159,18 @@ def calculate_power(streak, total_problems):
     # 전투력에 추가적인 비율 적용
     power = base_power * (1 + (streak * streak_multiplier))
 
+    swexpert_point = 10709
+    power += swexpert_point / 30
+    power = power * ((1.01) ** (streak - 5))
+
+    # 랜덤 배율 적용 (±5%)
+    random_multiplier = random.uniform(0.775, 1.025)
+    power *= random_multiplier
+
+    # 랜덤 보너스 추가 (50~150)
+    random_bonus = random.randint(-50, 10)
+    power += random_bonus
+
     # 계산 과정 설명
     calculation_steps = (
         f"Base Power Calculation:\n"
@@ -168,7 +180,13 @@ def calculate_power(streak, total_problems):
         f"Power Calculation with Multiplier:\n"
         f"  streak * streak_multiplier = {streak} * {streak_multiplier} = {streak * streak_multiplier}\n"
         f"  1 + (streak * streak_multiplier) = 1 + {streak * streak_multiplier} = {1 + streak * streak_multiplier}\n"
-        f"  power = {base_power} * {1 + streak * streak_multiplier} = {power}\n"
+        f"  power = {base_power} * {1 + streak * streak_multiplier} = {power / random_multiplier - random_bonus} / {random_multiplier}\n\n"
+        f"Random Multiplier Applied:\n"
+        f"  random_multiplier = {random_multiplier}\n"
+        f"  power after multiplier = {power / random_multiplier} * {random_multiplier} = {power - random_bonus}\n\n"
+        f"Random Bonus Applied:\n"
+        f"  random_bonus = {random_bonus}\n"
+        f"  final power = {power - random_bonus} + {random_bonus} = {power}\n"
     )
 
     return power, calculation_steps

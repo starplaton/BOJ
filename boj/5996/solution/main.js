@@ -1,4 +1,4 @@
-function solution_1000(scanner) {
+function solution_5996(scanner) {
     const N = scanner.readInt();
     const [a1, a2, a3] = scanner.readLine().split(' ').map(Number);
     const ret = [];
@@ -14,7 +14,7 @@ function solution(scanner) {
     let TC = 1;
     // TC = scanner.readInt();
     let result = [];
-    while(TC--) result.push(solution_1000(scanner));
+    while(TC--) result.push(solution_5996(scanner));
     return result.join('\n');
 }
 

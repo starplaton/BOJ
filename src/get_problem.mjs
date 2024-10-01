@@ -159,7 +159,7 @@ async function savePageImage(url, path) {
         writeFile(`./boj/${problem_num}/output/${i}.txt`, ret.sample_outputs[i - 1]);
     }
     saveAttachments(ret.markdown, `./boj/${problem_num}/attachments`);
-    createTemplate(['cpp', 'py', 'js'], problem_num, `./boj/${problem_num}`);
+    createTemplate(['cpp', 'py'], problem_num, `./boj/${problem_num}`);
     console.log('Done for collecting page, saving page screenshot...');
     await savePageImage('https://www.acmicpc.net/problem/' + problem_num, `./boj/${problem_num}/desc.png`);
     console.log('All work ended.');
