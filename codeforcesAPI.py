@@ -161,7 +161,7 @@ def calculate_power(streak, total_problems):
 
     swexpert_point = 10709
     power += swexpert_point / 30
-    power = power * ((1.01) ** (streak - 5))
+    power = power * ((1.002) ** (streak - 5))
 
     # 랜덤 배율 적용 (±5%)
     random_multiplier = random.uniform(0.775, 1.025)

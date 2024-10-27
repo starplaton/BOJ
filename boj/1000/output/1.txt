@@ -1,7 +1,1 @@
-Alice
-Bob
-Alice
-Alice
-Bob
-Alice
-Alice
+4

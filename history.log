@@ -223,3 +223,201 @@ Random Bonus Applied:
   final power = 4236.782178415233 + -45 = 4191.782178415233
 Power: 4191.78
 --------------------------------------------------
+Timestamp: 2024-10-07 20:26:27
+Found List: {'Scraped Data': {'streak': 18, 'total_problems': 836}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 18, 'total_problems': 1116}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 18 * 100 = 1800
+  total_problems * total_weight = 1116 * 0.8 = 892.8000000000001
+  base_power = 1800 + 892.8000000000001 = 2692.8
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 18 * 0.05 = 0.9
+  1 + (streak * streak_multiplier) = 1 + 0.9 = 1.9
+  power = 2692.8 * 1.9 = 6229.369286731208 / 0.7945907359955037
+
+Random Multiplier Applied:
+  random_multiplier = 0.7945907359955037
+  power after multiplier = 6230.369286731208 * 0.7945907359955037 = 4949.593717067532
+
+Random Bonus Applied:
+  random_bonus = 1
+  final power = 4949.593717067532 + 1 = 4950.593717067532
+Power: 4950.59
+--------------------------------------------------
+Timestamp: 2024-10-08 23:25:10
+Found List: {'Scraped Data': {'streak': 19, 'total_problems': 838}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 19, 'total_problems': 1118}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 19 * 100 = 1900
+  total_problems * total_weight = 1118 * 0.8 = 894.4000000000001
+  base_power = 1900 + 894.4000000000001 = 2794.4
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 19 * 0.05 = 0.9500000000000001
+  1 + (streak * streak_multiplier) = 1 + 0.9500000000000001 = 1.9500000000000002
+  power = 2794.4 * 1.9500000000000002 = 5965.719788417686 / 0.8953374194986257
+
+Random Multiplier Applied:
+  random_multiplier = 0.8953374194986257
+  power after multiplier = 5922.719788417686 * 0.8953374194986257 = 5345.832651775337
+
+Random Bonus Applied:
+  random_bonus = -43
+  final power = 5345.832651775337 + -43 = 5302.832651775337
+Power: 5302.83
+--------------------------------------------------
+Timestamp: 2024-10-10 19:52:59
+Found List: {'Scraped Data': {'streak': 21, 'total_problems': 840}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 21, 'total_problems': 1120}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 21 * 100 = 2100
+  total_problems * total_weight = 1120 * 0.8 = 896.0
+  base_power = 2100 + 896.0 = 2996.0
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 21 * 0.05 = 1.05
+  1 + (streak * streak_multiplier) = 1 + 1.05 = 2.05
+  power = 2996.0 * 2.05 = 6710.694355092871 / 0.8953189888724832
+
+Random Multiplier Applied:
+  random_multiplier = 0.8953189888724832
+  power after multiplier = 6717.694355092871 * 0.8953189888724832 = 6007.479317556137
+
+Random Bonus Applied:
+  random_bonus = 7
+  final power = 6007.479317556137 + 7 = 6014.479317556137
+Power: 6014.48
+--------------------------------------------------
+Timestamp: 2024-10-11 23:59:38
+Found List: {'Scraped Data': {'streak': 22, 'total_problems': 841}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 22, 'total_problems': 1121}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 22 * 100 = 2200
+  total_problems * total_weight = 1121 * 0.8 = 896.8000000000001
+  base_power = 2200 + 896.8000000000001 = 3096.8
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 22 * 0.05 = 1.1
+  1 + (streak * streak_multiplier) = 1 + 1.1 = 2.1
+  power = 3096.8 * 2.1 = 7092.179936376855 / 0.9076934986592105
+
+Random Multiplier Applied:
+  random_multiplier = 0.9076934986592105
+  power after multiplier = 7042.179936376855 * 0.9076934986592105 = 6442.140944637604
+
+Random Bonus Applied:
+  random_bonus = -50
+  final power = 6442.140944637604 + -50 = 6392.140944637604
+Power: 6392.14
+--------------------------------------------------
+Timestamp: 2024-10-12 20:11:46
+Found List: {'Scraped Data': {'streak': 22, 'total_problems': 842}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 22, 'total_problems': 1122}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 22 * 100 = 2200
+  total_problems * total_weight = 1122 * 0.8 = 897.6
+  base_power = 2200 + 897.6 = 3097.6
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 22 * 0.05 = 1.1
+  1 + (streak * streak_multiplier) = 1 + 1.1 = 2.1
+  power = 3097.6 * 2.1 = 7094.415396749941 / 0.8710983446742757
+
+Random Multiplier Applied:
+  random_multiplier = 0.8710983446742757
+  power after multiplier = 7063.415396749941 * 0.8710983446742757 = 6183.929459855665
+
+Random Bonus Applied:
+  random_bonus = -31
+  final power = 6183.929459855665 + -31 = 6152.929459855665
+Power: 6152.93
+--------------------------------------------------
+Timestamp: 2024-10-13 10:18:31
+Found List: {'Scraped Data': {'streak': 24, 'total_problems': 845}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 24, 'total_problems': 1125}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 24 * 100 = 2400
+  total_problems * total_weight = 1125 * 0.8 = 900.0
+  base_power = 2400 + 900.0 = 3300.0
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 24 * 0.05 = 1.2000000000000002
+  1 + (streak * streak_multiplier) = 1 + 1.2000000000000002 = 2.2
+  power = 3300.0 * 2.2 = 7910.595759659989 / 0.8657829304478433
+
+Random Multiplier Applied:
+  random_multiplier = 0.8657829304478433
+  power after multiplier = 7903.595759659989 * 0.8657829304478433 = 6849.798297873574
+
+Random Bonus Applied:
+  random_bonus = -7
+  final power = 6849.798297873574 + -7 = 6842.798297873574
+Power: 6842.80
+--------------------------------------------------
+Timestamp: 2024-10-17 22:38:10
+Found List: {'Scraped Data': {'streak': 28, 'total_problems': 849}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 28, 'total_problems': 1129}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 28 * 100 = 2800
+  total_problems * total_weight = 1129 * 0.8 = 903.2
+  base_power = 2800 + 903.2 = 3703.2
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 28 * 0.05 = 1.4000000000000001
+  1 + (streak * streak_multiplier) = 1 + 1.4000000000000001 = 2.4000000000000004
+  power = 3703.2 * 2.4000000000000004 = 9678.309728096248 / 0.9175318115544215
+
+Random Multiplier Applied:
+  random_multiplier = 0.9175318115544215
+  power after multiplier = 9666.309728096248 * 0.9175318115544215 = 8881.14667586628
+
+Random Bonus Applied:
+  random_bonus = -12
+  final power = 8881.14667586628 + -12 = 8869.14667586628
+Power: 8869.15
+--------------------------------------------------
+Timestamp: 2024-10-19 08:40:51
+Found List: {'Scraped Data': {'streak': 29, 'total_problems': 850}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 29, 'total_problems': 1130}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 29 * 100 = 2900
+  total_problems * total_weight = 1130 * 0.8 = 904.0
+  base_power = 2900 + 904.0 = 3804.0
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 29 * 0.05 = 1.4500000000000002
+  1 + (streak * streak_multiplier) = 1 + 1.4500000000000002 = 2.45
+  power = 3804.0 * 2.45 = 10144.35494703162 / 0.7834794473531275
+
+Random Multiplier Applied:
+  random_multiplier = 0.7834794473531275
+  power after multiplier = 10116.35494703162 * 0.7834794473531275 = 7953.95618312841
+
+Random Bonus Applied:
+  random_bonus = -28
+  final power = 7953.95618312841 + -28 = 7925.95618312841
+Power: 7925.96
+--------------------------------------------------
+Timestamp: 2024-10-27 16:34:17
+Found List: {'Scraped Data': {'streak': 37, 'total_problems': 861}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 37, 'total_problems': 1141}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 37 * 100 = 3700
+  total_problems * total_weight = 1141 * 0.8 = 912.8000000000001
+  base_power = 3700 + 912.8000000000001 = 4612.8
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 37 * 0.05 = 1.85
+  1 + (streak * streak_multiplier) = 1 + 1.85 = 2.85
+  power = 4612.8 * 2.85 = 14394.943618957888 / 0.9450487470645887
+
+Random Multiplier Applied:
+  random_multiplier = 0.9450487470645887
+  power after multiplier = 14393.943618957888 * 0.9450487470645887 = 13603.978382414485
+
+Random Bonus Applied:
+  random_bonus = -1
+  final power = 13603.978382414485 + -1 = 13602.978382414485
+Power: 13602.98
+--------------------------------------------------
