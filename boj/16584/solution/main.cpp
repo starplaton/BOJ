@@ -10,11 +10,11 @@ typedef long long ll;
 ll t, n, m, k;
 int ar[202020];
 string s;
-int bit[61];
+int bit[64];
 void solve_16584() {
     cin >> k;
     int blen = 0;
-    for (blen = 0; blen <= 60; blen++) {
+    for (blen = 1; blen <= 64; blen++) {
         bit[blen] = k % 2;
         k >>= 1;
         if (k == 0) {
@@ -22,21 +22,24 @@ void solve_16584() {
         }
     }
     cin >> s;
-    // for (int i = 0; i <= blen; i++) {
+    // for (int i = 1; i <= blen; i++) {
     //     cout << bit[i];
     // }
     // cout << endl;
 
-    int bidx = 0;
+    int bidx = 1;
     for (int i = s.size() - 1; i >= 0; i--) {
         if (s[i] - '0' == bit[bidx]) {
             bidx++;
+        } else if (s[i] - '0' == 0) {
+            bidx++;
         }
+        if (bidx >= blen) break;
     }
-    if (blen + 1 == bidx) {
-        cout << s.size() - blen - 1;
-    } else {
+    if (blen == bidx) {
         cout << s.size() - blen;
+    } else {
+        cout << s.size() - blen + 1;
     }
 }
 

@@ -1,0 +1,11 @@
+&&&B#
+...&.
+.#&B.
+...@&
+Passed Turns : 12
+LV : 3
+HP : 30/30
+ATT : 6+5
+DEF : 6+0
+EXP : 0/15
+YOU WIN!

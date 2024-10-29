@@ -1,0 +1,13 @@
+.....M
+..##B@
+......
+##.###
+......
+.#..#.
+Passed Turns : 31
+LV : 5
+HP : 40/40
+ATT : 10+2
+DEF : 10+2
+EXP : 4/25
+Press any key to continue.

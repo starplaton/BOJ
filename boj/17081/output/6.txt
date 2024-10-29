@@ -1,0 +1,15 @@
+..B.&..&
+.B&B#B#B
+.#...B..
+M#.&.&..
+..B.#&..
+.&#.&B..
+###BBB.&
+&B.##...
+Passed Turns : 12
+LV : 1
+HP : 0/20
+ATT : 2+0
+DEF : 2+0
+EXP : 0/5
+YOU HAVE BEEN KILLED BY GfGskF..

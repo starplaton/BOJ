@@ -7,12 +7,49 @@ using namespace std;
 #define MAXI (0x3fffffff)
 typedef long long ll;
 
-int t, n, m, k;
-int ar[202020];
+int n, d;
+struct E {
+    int s, e;
+
+    bool operator<(const E& other) const {
+        // if (e == other.e) return s > other.s;
+        return s > other.s;
+    }
+};
+priority_queue<E> pq;
 
 void solve_13334() {
     cin >> n;
-    for (int i = 0; i < n; i++) cin >> ar[i];
+    vector<E> v;
+    for (int i = 0; i < n; i++) {
+        int x, y;
+        cin >> x >> y;
+        if (x > y) swap(x, y);
+        v.push_back({x, y});
+    }
+    cin >> d;
+
+    sort(all(v), [&](E l, E r) {
+        if (l.e == r.e) return l.s < r.s;
+        return l.e < r.e;
+    });
+
+    int ans = 0;
+    for (auto cur : v) {
+        int st_e = cur.e;
+        if (st_e - cur.s <= d) {
+            pq.push(cur);
+        }
+        while (!pq.empty()) {
+            if (st_e - pq.top().s > d) {
+                pq.pop();
+            } else {
+                break;
+            }
+        }
+        ans = max(ans, (int)pq.size());
+    }
+    cout << ans << endl;
 }
 
 int main() {

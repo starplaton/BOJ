@@ -1,73 +1,96 @@
-// dfs, 백트래킹 연습.. 맵을 잘 캐싱하고 가지치기를 잘 하자.
 #include <bits/stdc++.h>
 using namespace std;
 
-#define _D(...) // printf(__VA_ARGS__)
-#define FOR(i,a,b) for(int i=(a); i<(b); ++i)
+#define all(a) a.begin(), a.end()
+#define pii pair<ll, ll>
+#define MINI (-0x7fffffff)
+#define MAXI (0x3fffffff)
 typedef long long ll;
 
-char m[9][10];
-char chk_row[9][10], chk_col[9][10], chk_area[9][10];
-int get_area(int r, int c) {
-    return (r / 3) * 3 + (c / 3);
-}
-void update_chk() {
-    FOR(i,0,9) FOR(j,0,9) {
-        chk_row[i][m[i][j]] = 1;
-        chk_col[j][m[i][j]] = 1;
-        chk_area[get_area(i,j)][m[i][j]] = 1;
-    }
-}
-bool dfs(int i) {
-    if (i == 81) {
-        // 다 맞는 case니까 리턴
-        return true;
-    }
-    int r = i / 9;
-    int c = i % 9;
-    if (m[r][c]) { // 초기값 차 있는 상태, skip
-        _D("(%d, %d) is already inserted, skip to next.\n", r, c);
-        return dfs(i + 1);
-    }
-    _D("(%d, %d) is checking...\n", r, c);
-    int a = get_area(r, c);
-    // 아니라면, 채우고 넘어간다.
-    FOR(n,1,10) {
-        _D("   try %d!\n", n);
-        if (chk_row[r][n] == 1 || chk_col[c][n] == 1 || chk_area[a][n] == 1) continue;
-        chk_row[r][n] = 1; chk_col[c][n] = 1; chk_area[a][n] = 1;
-        bool ret = dfs(i + 1);
-        if (ret) {
-            m[r][c] = n; // 찾았으면 채운다.
-            return true;
+int t, n, m, k;
+int chs[9][9];
+int v[9][9][10];
+int cnt[9][9];
+
+bool isValid(int row, int col, int num) {
+    for (int i = 0; i < 9; i++) {
+        if (chs[row][i] == num || chs[i][col] == num) {
+            return false;
         }
-        chk_row[r][n] = 0; chk_col[c][n] = 0; chk_area[a][n] = 0;
     }
-    return false;
+
+    int startRow = (row / 3) * 3;
+    int startCol = (col / 3) * 3;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (chs[startRow + i][startCol + j] == num) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+int is_full() {
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            if (chs[i][j] == 0) return 0;
+        }
+    }
+    return 1;
+}
+
+int dfs() {
+    // for (int i = 0; i < 9; i++) {
+    //     for (int j = 0; j < 9; j++) {
+    //         printf("%d", chs[i][j]);
+    //     }
+    //     printf("\n");
+    // }
+    // printf("\n");
+
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            if (chs[i][j] == 0) {
+                for (int k = 1; k <= 9; k++) {
+                    if (isValid(i, j, k)) {
+                        chs[i][j] = k;
+                        if (dfs()) {
+                            return 1;
+                        }
+                        chs[i][j] = 0;
+                    }
+                }
+                return 0;
+            }
+        }
+    }
+    return 1;
 }
 
 void solve_2239() {
-    FOR(i,0,9) {
-        scanf("%s", m[i]);
+    for (int i = 0; i < 9; i++) {
+        string s;
+        cin >> s;
+        for (int j = 0; j < 9; j++) {
+            chs[i][j] = s[j] - '0';
+        }
     }
-    FOR(r,0,9) FOR(c,0,9) {
-        m[r][c] = m[r][c] - '0';
-    }
-    // 처음 맵의 상태를 체크해서 넣어둠
-    update_chk();
-    auto ret = dfs(0);
-    // assert(ret);
-    FOR(r,0,9) FOR(c,0,9) {
-        m[r][c] = m[r][c] + '0';
-    }
-    FOR(i,0,9) {
-        printf("%s%c", m[i], i==8?' ':'\n');
+
+    dfs();
+
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            printf("%d", chs[i][j]);
+        }
+        printf("\n");
     }
 }
 
 int main() {
+    cin.tie(0), cout.tie(0), ios_base::sync_with_stdio(false);
     int TC = 1;
     // scanf("%d", &TC);
-    while(TC--) solve_2239(); 
+    while (TC--) solve_2239();
     return 0;
 }

@@ -1,0 +1,12 @@
+.^^#M
+^^^#.
+.^.##
+^^^^#
+^^^^^
+Passed Turns : 34
+LV : 2
+HP : 0/25
+ATT : 4+0
+DEF : 4+0
+EXP : 0/10
+YOU HAVE BEEN KILLED BY SPIKE TRAP..
