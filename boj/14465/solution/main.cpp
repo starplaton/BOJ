@@ -7,12 +7,24 @@ using namespace std;
 #define MAXI (0x3fffffff)
 typedef long long ll;
 
-int t, n, m, k;
-int ar[202020];
+int t, n, k, b;
+int ar[202020], pr[202020];
 
 void solve_14465() {
-    cin >> n;
-    for (int i = 0; i < n; i++) cin >> ar[i];
+    cin >> n >> k >> b;
+    for (int i = 0; i < b; i++) {
+        int x;
+        cin >> x;
+        ar[x] = 1;
+    }
+
+    for (int i = 1; i <= n; i++) pr[i] = pr[i - 1] + ar[i];
+
+    int ans = 202020;
+    for (int i = k; i <= n; i++) {
+        ans = min(ans, pr[i] - pr[i - k]);
+    }
+    cout << ans;
 }
 
 int main() {
