@@ -10,6 +10,5 @@ echo "To submit: https://www.acmicpc.net/submit/$1"
 echo "$target_dir"
 echo "$target_dir/solution/main.cpp"
 echo "$target_dir/solution/main.py"
-echo "$target_dir/solution/main.js"
 
 cd "$target_dir"

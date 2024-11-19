@@ -113,7 +113,7 @@ def scrape_solved_ac_profile(driver, url, css_class="css-1midmz7"):
     :return: 추출된 숫자의 리스트
     """
     driver.get(url)
-    time.sleep(1)  # 페이지 로드 대기 (필요에 따라 조절)
+    time.sleep(3)  # 페이지 로드 대기 (필요에 따라 조절)
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, "html.parser")
 
