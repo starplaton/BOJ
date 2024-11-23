@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# 디버그 옵션 여부 확인
+if [ "$1" == "--debug" ]; then
+    COMPILER_FLAGS="-O0 -g -Wno-unused-result"
+    shift # 첫 번째 인자를 제거하여 나머지 인자가 정상적으로 처리되도록 함
+else
+    COMPILER_FLAGS="-O2 -Wno-unused-result"
+fi
+
+echo "Compiling with flags: $COMPILER_FLAGS"
+g++ -std=c++17 $COMPILER_FLAGS solution/main.cpp -o main
+
 echo "Test Start ---------------"
 
 # 테스트 함수 정의
@@ -12,8 +23,7 @@ run_test() {
     start_time=$(date +%s%3N)
 
     # 프로그램 실행 및 출력 저장
-    cp solution/main.js solution/main.cjs
-    node solution/main.cjs readizDebug < "$input_file" > "/tmp/temp_${filename}.txt"
+    ./main < "$input_file" > "/tmp/temp_${filename}.txt"
 
     # 프로그램 실행 시간 측정 종료
     end_time=$(date +%s%3N)

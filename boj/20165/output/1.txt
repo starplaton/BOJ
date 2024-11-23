@@ -1,0 +1,6 @@
+11
+S F S S S
+S F S S S
+S F S F S
+S F F S S
+S F F S S
