@@ -3,3 +3,8 @@ cookie.txt
 Pipfile
 .pytest_cache/
 .vscode/
+main
+*.sh
+desc.md
+desc.png
+desc.html
