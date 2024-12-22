@@ -575,3 +575,25 @@ Random Bonus Applied:
   final power = 50122.00966307529 + -4 = 50118.00966307529
 Power: 50118.01
 --------------------------------------------------
+Timestamp: 2024-12-20 18:30:01
+Found List: {'Scraped Data': {'streak': 92, 'total_problems': 972}, 'API Data': {'streak': 0, 'total_problems': 280}, 'Combined Data': {'streak': 92, 'total_problems': 1252}}
+Calculation Formula:
+Base Power Calculation:
+  streak * streak_weight = 92 * 100 = 9200
+  total_problems * total_weight = 1252 * 0.8 = 1001.6
+  base_power = 9200 + 1001.6 = 10201.6
+
+Power Calculation with Multiplier:
+  streak * streak_multiplier = 92 * 0.05 = 4.6000000000000005
+  1 + (streak * streak_multiplier) = 1 + 4.6000000000000005 = 5.6000000000000005
+  power = 10201.6 * 5.6000000000000005 = 68400.40539015151 / 0.8255737253590744
+
+Random Multiplier Applied:
+  random_multiplier = 0.8255737253590744
+  power after multiplier = 68404.40539015151 * 0.8255737253590744 = 56468.87978891973
+
+Random Bonus Applied:
+  random_bonus = 4
+  final power = 56468.87978891973 + 4 = 56472.87978891973
+Power: 56472.88
+--------------------------------------------------
