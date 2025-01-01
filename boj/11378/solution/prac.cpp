@@ -79,4 +79,43 @@ int main() {
 
     int N, M, K;
     cin >> N >> M >> K;
+
+    int S = 0;
+    int P = 1;
+    int T = N + M + 2;
+
+    Dinic dinic(T + 1);
+
+    dinic.addEdge(S, P, K);
+
+    auto emp_idx = [&](int i) { return 2 + (i - 1); };
+    auto job_idx = [&](int j) { return 2 + N + (j - 1); };
+
+    for (int i = 1; i <= N; i++) {
+        int eIndex = emp_idx(i);
+        dinic.addEdge(P, eIndex, K);
+        dinic.addEdge(S, eIndex, 1);
+    }
+
+    for (int i = 1; i <= N; i++) {
+        int c;
+        cin >> c;
+
+        while (c--) {
+            int job;
+            cin >> job;
+            int eIndex = emp_idx(i);
+            int jIndex = job_idx(job);
+            dinic.addEdge(eIndex, jIndex, 1);
+        }
+    }
+
+    for (int j = 1; j <= M; j++) {
+        dinic.addEdge(job_idx(j), T, 1);
+    }
+
+    ll ans = dinic.maxFlow(S, T);
+    cout << ans << "\n";
+
+    return 0;
 }
