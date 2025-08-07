@@ -3,7 +3,6 @@ import TurndownService from 'turndown';
 import { parse } from 'node-html-parser';
 import fs from 'fs-extra';
 import { fileTypeFromBuffer } from 'file-type';
-import puppeteer from 'puppeteer';
 
 const turndownService = new TurndownService();
 
@@ -161,6 +160,6 @@ async function savePageImage(url, path) {
     saveAttachments(ret.markdown, `./boj/${problem_num}/attachments`);
     createTemplate(['cpp', 'py'], problem_num, `./boj/${problem_num}`);
     console.log('Done for collecting page, saving page screenshot...');
-    await savePageImage('https://www.acmicpc.net/problem/' + problem_num, `./boj/${problem_num}/desc.png`);
+    // await savePageImage('https://www.acmicpc.net/problem/' + problem_num, `./boj/${problem_num}/desc.png`);
     console.log('All work ended.');
 })();
